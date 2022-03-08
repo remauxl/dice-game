@@ -2,6 +2,8 @@
 
 IN V1.1 :)  
 ****************************************************************************
+Numbers no longer have equal chances. %18 for 2,3,4  %20 for 1 and %13 for 5,6.
+
 
 I will add a function for "HOW TO PLAY" button. 
 
