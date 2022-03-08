@@ -16,3 +16,5 @@ When one player reach to the final score, there is no more needed to press hold 
 I will add a scroll button for scoreboard.
 
 I will add dark-red mode.Button and some overlays will be black
+
+When someone reaches the final score, the game will restarts by itself after certain delay.
