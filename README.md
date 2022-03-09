@@ -1,6 +1,6 @@
 # remauxl.github.io
 
-IN V1.5 :) (functional)
+IN V1.5 :) (functional) ✔️ ✔️ ✔️ ✔️ ✔️ 
 ****************************************************************************
 Numbers no longer have equal chances. %18 for 2,3,4  %20 for 1 and %13 for 5,6.
 
