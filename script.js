@@ -90,8 +90,10 @@ document.getElementById(`score--${activePlayer}`).textContent= scores[activePlay
 
 
 const capscore = document.getElementById("lname").value;
-if(typeof capscore !="number" || capscore<10){
+console.log(typeof capscore)
+if(typeof capscore !='string' || capscore<10){
     alert("Please write only numbers bigger than 10");
+    start();
 }
 else{
 
