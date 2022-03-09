@@ -296,7 +296,7 @@ left: 53%;
 
 .btn--help{
   
-  left: 89.2%;
+  left: 91%;
   background-color: rgba(255, 255, 255, 0.35);
   font-size: 1.4rem;
   word-spacing: 2px;
@@ -308,7 +308,7 @@ left: 53%;
   width: 1rem;
   top:5rem;
   left:-13rem;
-  font-size: 5rem;
+  font-size: 6rem;
  
 }
 
@@ -316,9 +316,39 @@ left: 53%;
   position:relative;
   width: 1rem;
   top:5rem;
-  left:-7rem;
-  font-size: 5rem;
+  left:-13rem;
+  font-size: 6rem;
  
+}
+
+input {
+  background-color: transparent;
+  border: 0px solid;
+  height: 20px;
+  width: 160px;
+  color: #CCC;
+}
+
+
+.table--score{
+  position: absolute;
+  bottom: 5%;
+  left: 47.5%;
+
+  text-align: center;
+  font-size: 40px;
+  color: #4d4d4d;
+  outline: none;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(800px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  right: 10rem;
 }
 
 .hidden{

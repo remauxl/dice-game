@@ -49,9 +49,23 @@ start()
 btnRoll.addEventListener('click',function(){
 if(playable){
 //1. Generate a random dice roll
-let dice=Math.trunc(Math.random()*6)+1;
-console.log(dice)
+let dice=0;
+let ratio=Math.floor(Math.random() * 99)+1;
+console.log(ratio)
+{
+if(ratio>0 && ratio<=18){dice=2;}
 
+else if(ratio>18 && ratio<=36) {dice=3;}
+
+else if(ratio>36 && ratio<=54){dice=4;}
+
+else if(ratio>54 && ratio<=74){dice=1;}
+
+else if(ratio>74 && ratio<=87){dice=5;}
+
+else if(ratio>87 && ratio<=100){dice=6;}
+}
+console.log(dice)
 //2. Display dice
 diceEl.classList.remove("hidden");
 diceEl.src = `dice-${dice}.png`;
@@ -74,14 +88,25 @@ btnHold.addEventListener('click',function(){
 scores[activePlayer]+=currentscore;
 document.getElementById(`score--${activePlayer}`).textContent= scores[activePlayer];
 
-// Check if players score is >100 or not
 
-if(scores[activePlayer]>= 50) {
+const capscore = document.getElementById("lname").value;
+if(typeof capscore !="number" || capscore<10){
+    alert("Please write only numbers bigger than 10");
+}
+else{
+
+// Check if players score is > capscore or not
+
+if(scores[activePlayer]>= capscore) {
     console.log(activePlayer)
     playable=false;
 diceEl.classList.add("hidden");
 document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
 document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
+
+setTimeout(() => {start(); }, 1500);
+
+
         if(activePlayer==0)
 {
     var div=document.getElementById('tll')
@@ -103,7 +128,7 @@ div.innerHTML +=   '🏆<br>'
 else{
 switchPlayer();
 }
-
+}
 btnNew.addEventListener('click',start);
 
 
@@ -132,5 +157,7 @@ btny.addEventListener('click',function(){
 document.body.style.backgroundImage = "linear-gradient(to top left, #1b9e5d , #faf600)"
 console.log("convertedy")
 document.querySelector(".current").style.backgroundColor = "#bbb943";  
-document.querySelector(".current2").style.backgroundColor = "#bbb943";})
+document.querySelector(".current2").style.backgroundColor = "#bbb943"; })
+
+
 
