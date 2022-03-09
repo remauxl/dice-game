@@ -275,28 +275,28 @@ main {
 
 .btn--green{
 background-image: linear-gradient(to top left, #462247 , #15ff00 );
-left: 72rem;
+left: 47%;
 }
 .btn--blue{
   background-image: linear-gradient(to top left, #5c5151 , #4400ff );
 
-left: 75rem;
+left: 49%;
 
 }
 .btn--pink{
   background-image: linear-gradient(to top left, #753682 , #ff0008 );
 
-left:78rem
+left:51%
 }
 .btn--yellow{
   background-image: linear-gradient(to top left, #1b9e5d , #faf600);
 
-left: 81rem;
+left: 53%;
 }
 
 .btn--help{
   
-  left: 136.5rem;
+  left: 89.2%;
   background-color: rgba(255, 255, 255, 0.35);
   font-size: 1.4rem;
   word-spacing: 2px;
