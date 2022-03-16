@@ -1,6 +1,6 @@
 # remauxl.github.io
 
-2.0 Bugs => I deactivated color choosing buttons owe to disjointedness in dark mode with other color patterns.
+2.0 Bugs => I deactivated color choosing buttons owe to mismatch in dark mode with other color patterns.
 
 IN V1.5 :) (functional) ✔️ ✔️ ✔️ ✔️ ✔️ 
 ****************************************************************************
