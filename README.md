@@ -1,5 +1,7 @@
 # remauxl.github.io
 
+2.0 Bugs => I deactivated color choosing buttons owe to disjointedness in dark mode with other color patterns.
+
 IN V1.5 :) (functional) ✔️ ✔️ ✔️ ✔️ ✔️ 
 ****************************************************************************
 Numbers no longer have equal chances. %18 for 2,3,4  %20 for 1 and %13 for 5,6.
@@ -11,12 +13,16 @@ When one player reach to the final score, there is no more needed to press hold 
 Players will be able to adjust game's final score.
 
 
-IN V2.0 :)   (appearance)	
+IN V2.0 :)   (appearance)	✔️ ✔️ ✔️ ✔️ ✔️ 
 ****************************************************************************
-I will add a function for "HOW TO PLAY" button. 
+A function for "HOW TO PLAY" button was added. 
 
-I will add hidden scroll button for scoreboard.
+Hidden scroll button for scoreboard was added.
 
-I will add dark-red mode.Button and some overlays will be black
+Dark-red mode is available.Button and some overlays will be black
 
-I will fix left leaned color pallet,player 2 scoreboard and "HOW TO PLAY " button position.
+Left leaned color pallet,player 2 scoreboard and "HOW TO PLAY " button position was fixed.
+
+IN V3.0
+****************************************************************************
+Responsive website will be added.
