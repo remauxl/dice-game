@@ -68,7 +68,7 @@ else if(ratio>87 && ratio<=100){dice=6;}
 console.log(dice)
 //2. Display dice
 diceEl.classList.remove("hidden");
-diceEl.src = `dice-${dice}.png`;
+diceEl.src = `/img/dice-${dice}.png`;
 
 
 
@@ -134,32 +134,114 @@ switchPlayer();
 btnNew.addEventListener('click',start);
 
 
-
+/*
 })
 btng.addEventListener('click',function(){
 document.body.style.backgroundImage = "linear-gradient(to top left, #462247 , #15ff00 )"
 console.log("convertedg")
 document.querySelector(".current").style.backgroundColor = "#058c13";
-document.querySelector(".current2").style.backgroundColor = "#058c13";})
+document.querySelector(".current2").style.backgroundColor = "#058c13";
+document.querySelector(".table--left").style.backgroundColor="rgba(255, 255, 255, 0.35)"
+document.querySelector(".table--right").style.backgroundColor="rgba(255, 255, 255, 0.35)"
 
-btnb.addEventListener('click',function(){
+document.querySelector(".btn").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--roll").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--hold").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".table--score").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector("#tname--2").style.color="black"
+document.querySelector("#tname--1").style.color="black"
+document.querySelector(".btn").style.color="#444"
+document.querySelector(".btn--roll").style.color="black"
+document.querySelector(".btn--hold").style.color="black"
+
+
+
+
+})
+
+
+ btnb.addEventListener('click',function(){
+
 document.body.style.backgroundImage = "linear-gradient(to top left, #5c5151 , #4400ff )"
 console.log("convertedb")
 document.querySelector(".current").style.backgroundColor = "#4400ff";
-document.querySelector(".current2").style.backgroundColor = "#4400ff";})
+document.querySelector(".current2").style.backgroundColor = "#4400ff";
+
+document.querySelector(".btn").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--roll").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--hold").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".table--score").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector("#tname--2").style.color="black"
+document.querySelector("#tname--1").style.color="black"
+document.querySelector(".btn").style.color="#444"
+document.querySelector(".btn--roll").style.color="black"
+document.querySelector(".btn--hold").style.color="black"
+document.querySelector(".player--active").style.backgroundColor="rgba(255, 255, 255, 0.4)"
+
+
+
+})
+
 
 btnp.addEventListener('click',function(){
-    document.body.style.backgroundImage = "linear-gradient(to top left, #753682 , #ff0008 )";
-    console.log("converteddefaultn")
-    document.querySelector(".current").style.backgroundColor = "#c7365f";
-    document.querySelector(".current2").style.backgroundColor = "#c7365f";})
+document.body.style.backgroundImage = "linear-gradient(to top left, #753682 , #ff0008 )";
+console.log("converteddefaultn")
+document.querySelector(".current").style.backgroundColor = "#c7365f";
+document.querySelector(".current2").style.backgroundColor = "#c7365f";
     
+document.querySelector(".btn").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--roll").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--hold").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".table--score").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector("#tname--2").style.color="black"
+document.querySelector("#tname--1").style.color="black"
+document.querySelector(".btn").style.color="#444"
+document.querySelector(".btn--roll").style.color="black"
+document.querySelector(".btn--hold").style.color="black"
+document.querySelector(".player--active").style.backgroundColor="rgba(255, 255, 255, 0.4)"
+
+
+})
+
 
 btny.addEventListener('click',function(){
 document.body.style.backgroundImage = "linear-gradient(to top left, #1b9e5d , #faf600)"
 console.log("convertedy")
 document.querySelector(".current").style.backgroundColor = "#bbb943";  
-document.querySelector(".current2").style.backgroundColor = "#bbb943"; })
+document.querySelector(".current2").style.backgroundColor = "#bbb943"; 
+
+document.querySelector(".btn").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--roll").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".btn--hold").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector(".table--score").style.backgroundColor="rgba(255, 255, 255, 0.6)"
+document.querySelector("#tname--2").style.color="black"
+document.querySelector("#tname--1").style.color="black"
+document.querySelector(".btn").style.color="#"
+document.querySelector(".btn--roll").style.color="black"
+document.querySelector(".btn--hold").style.color="black"
+document.querySelector(".player--active").style.backgroundColor="rgba(255, 255, 255, 0.4)"
 
 
+})
+*/
 
+const modal=document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal= document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelector(".btn--help"); 
+
+
+const close = function(){
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden')
+}
+
+const open = function(){
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden')
+}
+
+btnsOpenModal.addEventListener('click',open)
+btnCloseModal.addEventListener('click',close)
+document.querySelector(".overlay").addEventListener('click',close)
+})

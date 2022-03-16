@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 , #bf2e34 );
+  background-image: linear-gradient(to top left,#602A66, #B70818  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,7 +43,15 @@ main {
   flex-direction: column;
   align-items: center;
   transition: all 0.75s;
+  background-color: #661830;
+
 }
+
+
+.player--active {
+  background-color: #4C1623;
+}
+
 
 .tableplayer {
   flex: 50%;
@@ -59,14 +67,9 @@ main {
   letter-spacing: 1px;
   word-spacing: 2px;
   margin-bottom: 1rem;
-
+  color: white;
+  
 }
-
-
-
-
-
-
 
 
 /* ELEMENTS */
@@ -78,18 +81,17 @@ main {
   word-spacing: 2px;
   font-weight: 300;
   margin-bottom: 1rem;
+  color:white;
 }
 
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: #D93261;
   margin-bottom: auto;
 }
 
-.player--active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
+
 .player--active .name {
   font-weight: 700;
 }
@@ -158,9 +160,9 @@ main {
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
+color: white;
 
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #2D1A1D;
   backdrop-filter: blur(10px);
 
   padding: 0.7rem 2.5rem;
@@ -239,7 +241,7 @@ main {
 
   width: 20rem;
   height: 60rem;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: #571E3D;
   backdrop-filter: blur(200px);
   filter: blur();
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
@@ -247,6 +249,8 @@ main {
   overflow: hidden;
   display: flex;
   right: 10rem;
+  overflow: hidden;
+  overflow-y: scroll;
   
 }
 .table--left{
@@ -262,8 +266,12 @@ main {
   overflow: hidden;
   display: flex;
   left: 10rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #7D0F1A;
 
 }
+
 
 .btncolor:active {
   transform: translate(-50%, 3px);
@@ -318,7 +326,6 @@ left: 53%;
   top:5rem;
   left:-13rem;
   font-size: 6rem;
- 
 }
 
 input {
@@ -341,7 +348,7 @@ input {
   outline: none;
   width: 10rem;
   height: 10rem;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: #2D1A1D;
   backdrop-filter: blur(800px);
   filter: blur();
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
@@ -351,7 +358,7 @@ input {
   right: 10rem;
 }
 
-.hidden{
-  display:none;
-}
 
+::-webkit-scrollbar {
+  display: none;
+}

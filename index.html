@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="help--button.css" />
+
     <title>Deyes</title>
-
-
   </head>
+
+
   <body>
     <div>
       <button class="btncolor btn--blue">     </button>
@@ -19,12 +20,8 @@
       <button class="btncolor btn--help">  HOW TO PLAY❔ </button>
     </div>
 
-
-
     <main>
       
-
-
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">43</p>
@@ -42,7 +39,6 @@
           <p class="current2-score" id="current--1">0</p>
         </div>
       </section>
-      
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
@@ -50,14 +46,12 @@
       <button class="btn btn--hold">📥 Hold</button>
     </main>
      
-
-
-
     <div class="table table--right" id="tr"> 
-      <h2 class="tableplayer" id="tname--2"> PLAYER 2 </H2>
+      <h2 class="tableplayer" id="tname--1"> PLAYER 2 </H2>
         <div class="table table--rightt" id="trr"> 
             <h1 class="rightplayer" id= "rp">    </h1>
-        </div >
+      </div>
+
     </div>
 
 
@@ -66,16 +60,23 @@
         <div class="table table--leftt" id="tll"> 
             <h1 class="leftplayer" id="lp"> </h1>  
         </div >
-
     </div>  
 
 
     <div class="scoreadjust" >
       <input class= "table table--score" type="text"  id="lname" placeholder="Cap"  onkeyup="this.value=this.value.replace(/[^\d]/,'')">
-
     </div>
 
-       
+
+    <div class="modal hidden">
+        <button class="close-modal"> x </button>
+        <div class="forh1">  <h1><center>HOW TO PLAY</center></h1> </div>
+          <P>Players can roll dice until the number of dice is 1.When dice number equal to 1,that player's score reset to 0.If players click on "HOLD" button before they saw number "1" on dice, their current score transfer to total score.If any player's score is equal to the cap value entered, the game is over.Always "Player 1" starts firstly. </P> 
+      
+    </div>
+    <div class="overlay hidden"></div>
+
+
 
     <script src="script.js"></script>
   </body>

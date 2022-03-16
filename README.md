@@ -15,7 +15,7 @@ IN V2.0 :)   (appearance)
 ****************************************************************************
 I will add a function for "HOW TO PLAY" button. 
 
-I will add a scroll button for scoreboard.
+I will add hidden scroll button for scoreboard.
 
 I will add dark-red mode.Button and some overlays will be black
 
