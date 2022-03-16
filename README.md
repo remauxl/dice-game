@@ -25,4 +25,6 @@ Left leaned color pallet,player 2 scoreboard and "HOW TO PLAY " button position 
 
 IN V3.0
 ****************************************************************************
+The open-source codes are not readeable right now. They're so complex and nested. I will ad comment lines and organize all of them.
+
 Responsive website will be added.
